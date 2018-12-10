@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="container">
+        <form action="welcome.html" method="GET" id="formulaire" onsubmit='validationFormulaire();'>
+            <fieldset>
+                <legend>Formulaire</legend>
+                Nom :
+                <input type="text" name="nom" id="nom"> <br>
+                Prenom
+                <input type="text" name="prenom" id="prenom"> <br>
+                Telephone
+                <input type="tel" name="telephone" id="telephone"> <br>
+                <br>
+                Ville
+                <select name="ville" id="ville">
+                    <option value="abidjan">Abidjan</option>
+                    <option value="lome">Lome</option>
+                    <option value="cotonou">Cotonou</option>
+                    <option value="accra">Accra</option>
+                </select>
+                <br>
+                <br>
+                Sexe 
+                <br>
+                <input type="radio" name="genre" value="masculin" id="masculin" checked> Masculin<br>
+                <input type="radio" name="genre" value="feminin" id="feminin"> Feminin<br>
+                <input type="radio" name="genre" value="autre" id="autre"> autre
+                <br>
+                <br>
+                <input type="submit" value="Valider">
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
