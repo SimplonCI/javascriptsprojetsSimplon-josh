@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="welcome.html" method="GET" id="formulaire" onsubmit='validationFormulaire();'>
+        <form  id="formulaire" >
             <fieldset>
                 <legend>Formulaire</legend>
                 Nom :
@@ -35,7 +35,7 @@
                 <input type="radio" name="genre" value="autre" id="autre"> autre
                 <br>
                 <br>
-                <input type="submit" value="Valider">
+                <input type="submit" value="Valider" onclick="return validationFormulaire();">
             </fieldset>
         </form>
     </div>
